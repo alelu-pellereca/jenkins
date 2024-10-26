@@ -1,0 +1,16 @@
+services: 
+  imagenfront:
+    image: alepellereca/imagenfront:latest
+    restart: always
+    ports:
+      - "3001:3000"  
+    volumes: 
+    - .:/opt
+
+  imagenback:
+    image: alepellereca/imagenback:latest
+    restart: always
+    ports:
+    - "8081:3000"  
+    volumes: 
+    - .:/opt

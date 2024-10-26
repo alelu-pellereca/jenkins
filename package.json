@@ -1,0 +1,34 @@
+{
+  "name": "pdo1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "jest.config.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gulp": "gulp"
+  },
+  "author": "alejandra",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alelu-pellereca/pdo1.git"
+  },
+  "keywords": [
+    "docker"
+  ],
+  "bugs": {
+    "url": "https://github.com/alelu-pellereca/pdo1/issues"
+  },
+  "homepage": "https://github.com/alelu-pellereca/pdo1#readme",
+  "dependencies": {
+    "express": "^4.21.1"
+  },
+  "devDependencies": {
+    "@flydotio/dockerfile": "^0.5.9",
+    "gulp": "^5.0.0"
+  }
+}

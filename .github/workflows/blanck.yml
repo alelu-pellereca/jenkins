@@ -1,0 +1,29 @@
+name: CI
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the "main" branch
+  push:
+    branches: [ "CICD" ]
+  pull_request:
+    branches: [ "CICD" ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  imagenfront:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build Frontend
+        run: docker build -t alepellereca/imagenfront:latest .
+      - name: Push frontend
+        run: docker push alepellereca/imagenfront:latest
+  imagenback:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build Backend
+        run: docker build -t alepellereca/imagenback:latest .
+      - name: Push backend
+        run: docker push alepellereca/imagenback:latest
