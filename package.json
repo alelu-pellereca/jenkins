@@ -25,7 +25,8 @@
   },
   "homepage": "https://github.com/alelu-pellereca/pdo1#readme",
   "dependencies": {
-    "express": "^4.21.1"
+    "express": "^4.21.1",
+    "node": "^23.1.0"
   },
   "devDependencies": {
     "@flydotio/dockerfile": "^0.5.9",
