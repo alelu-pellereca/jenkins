@@ -31,6 +31,12 @@ pipeline {
             }
         }
         
+        stage('Check Node.js Version') {
+            steps {
+                script {
+                    sh 'node -v'
+                }
+        }
         stage('Install dependencies'){
             steps {
                 echo 'Installing...'
