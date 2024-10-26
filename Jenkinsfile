@@ -17,7 +17,7 @@ pipeline {
  
         stage('Install Fly.io') {
             steps {
-                echo 'Installing Fly.io...'
+                echo 'Installing Fly.io....'
                 withCredentials([string(credentialsId: 'FLY_API_TOKEN_J', variable: 'FLY_API_TOKEN_J')]) {
                     sh '''
                         # Instalar flyctl si no está ya disponible
