@@ -36,18 +36,6 @@ pipeline {
                 sh 'npm install'
             }
         }
-        stage('Run test'){
-            steps{
-                echo 'Running test'
-                //sh 'npm run test'
-            }
-        }
-        stage('Pintar credencial'){
-            steps{
-                echo 'Hola esta es mi credencial: $FLY_API_TOKEN_J'
-            }
-        }
- 
         stage('Deploy to Fly.io') {
             steps {
                 echo 'Deploying the project to Fly.io...'
