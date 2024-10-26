@@ -1,5 +1,5 @@
 {
-  "name": "pdo1",
+  "name": "jenkins",
   "version": "1.0.0",
   "description": "<<<<<<< HEAD\r # curso-devops-docker\r Necesitamos dockerizar la API base que tenemos y estamos usando desde el inicio del curso. Entonces, se va a compartir el código de Dockerfile.",
   "main": "jest.config.js",
@@ -15,15 +15,15 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alelu-pellereca/pdo1.git"
+    "url": "git+https://github.com/alelu-pellereca/jenkins.git"
   },
   "keywords": [
     "docker"
   ],
   "bugs": {
-    "url": "https://github.com/alelu-pellereca/pdo1/issues"
+    "url": "https://github.com/alelu-pellereca/jenkins/issues"
   },
-  "homepage": "https://github.com/alelu-pellereca/pdo1#readme",
+  "homepage": "https://github.com/alelu-pellereca/jenkins#readme",
   "dependencies": {
     "express": "^4.21.1",
     "node": "^23.1.0"
