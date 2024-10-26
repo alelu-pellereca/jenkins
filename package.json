@@ -3,12 +3,8 @@
   "version": "1.0.0",
   "description": "<<<<<<< HEAD\r # jenkins\r Necesitamos dockerizar la API base que tenemos y estamos usando desde el inicio del curso. Entonces, se va a compartir el código de Dockerfile.",
   "main": "jest.config.js",
-  "directories": {
-    "test": "tests"
-  },
   "scripts": {
     "start": "node src/index.js",
-    "test": "echo \"Running tests...\"",
     "gulp": "gulp"
   },
   "author": "alejandra",
