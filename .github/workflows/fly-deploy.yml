@@ -4,7 +4,7 @@ name: Fly Deploy
 on:
   push:
     branches:
-      - deploy-gitactions
+      -  deploy-jenkins
 jobs:
   deploy:
     name: Deploy app
