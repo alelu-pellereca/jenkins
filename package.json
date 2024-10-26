@@ -27,5 +27,8 @@
   "devDependencies": {
     "@flydotio/dockerfile": "^0.5.9",
     "gulp": "^5.0.0"
+  },
+  "directories": {
+    "test": "tests"
   }
 }
