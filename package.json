@@ -8,7 +8,7 @@
   },
   "scripts": {
     "start": "node src/index.js",
-    "test": "echo \"Running tests...\"",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "gulp": "gulp"
   },
   "author": "alejandra",
