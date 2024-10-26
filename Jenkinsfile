@@ -39,7 +39,7 @@ pipeline {
         stage('Deploy to Fly.io') {
             steps {
                 echo 'Deploying the project to Fly.io...'
-                sh '/var/jenkins_home/.fly/bin/flyctl deploy --app jenkins'
+                sh '/var/jenkins_home/.fly/bin/flyctl deploy --app mi-primer-cicd-completo'
             }
         }
     }
