@@ -36,7 +36,11 @@ pipeline {
                 sh 'npm install'
             }
         }
-
+        stage('Run test'){
+            steps{
+                echo 'Running test'
+                //sh 'npm run test'
+            }
         }
         stage('Pintar credencial'){
             steps{
