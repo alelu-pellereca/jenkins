@@ -20,7 +20,6 @@ app.get('/backend', (req, res) => {
     res.json({ image: 'alepellereca/imagenback:latest', description: 'Backend' });
 });
 
-// Función para iniciar el servidor en un puerto específico
 const startServer = (port, description) => {
     const server = express();
     server.get('/', (req, res) => {
