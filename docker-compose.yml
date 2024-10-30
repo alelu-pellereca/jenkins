@@ -3,7 +3,7 @@ services:
     image: alepellereca/imagenfront:latest
     restart: always
     ports:
-      - "3001:3000"  
+      - "3001:8080"  
     volumes: 
     - .:/opt
 
@@ -11,6 +11,6 @@ services:
     image: alepellereca/imagenback:latest
     restart: always
     ports:
-    - "8081:3000"  
+    - "8081:8080"  
     volumes: 
     - .:/opt
