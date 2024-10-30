@@ -33,6 +33,6 @@ const startServer = (port, description) => {
 };
 
 startServer(3000, 'Frontend');
-startServer(8081, 'Backend');
+startServer(8080, 'Backend');
 
 module.exports = app;

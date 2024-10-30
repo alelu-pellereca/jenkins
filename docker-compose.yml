@@ -11,6 +11,6 @@ services:
     image: alepellereca/imagenback:latest
     restart: always
     ports:
-    - "8081:3000"  
+    - "8080:3000"  
     volumes: 
     - .:/opt
