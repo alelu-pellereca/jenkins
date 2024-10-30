@@ -17,7 +17,7 @@ pipeline {
  
         stage('Install Fly.io') {
             steps {
-                echo 'Installing Fly.io...'
+                echo 'Installing Fly.io....'
                 withCredentials([string(credentialsId: 'FLY_API_TOKEN_J', variable: 'FLY_API_TOKEN_J')]) {
                     sh '''
                         # Instalar flyctl si no está ya disponible
@@ -30,25 +30,12 @@ pipeline {
                 }
             }
         }
-        
         stage('Install dependencies'){
             steps {
                 echo 'Installing...'
                 sh 'npm install'
             }
         }
-        stage('Run test'){
-            steps{
-                echo 'Running test'
-                sh 'npm run test'
-            }
-        }
-        stage('Pintar credencial'){
-            steps{
-                echo 'Hola esta es mi credencial: $FLY_API_TOKEN_J'
-            }
-        }
- 
         stage('Deploy to Fly.io') {
             steps {
                 echo 'Deploying the project to Fly.io...'

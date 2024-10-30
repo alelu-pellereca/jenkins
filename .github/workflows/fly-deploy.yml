@@ -1,13 +1,13 @@
 # See https://fly.io/docs/app-guides/continuous-deployment-with-github-actions/
 
-name: Fly Deploy
+name: deploy jenkins
 on:
   push:
     branches:
-      - deploy-gitactions
+      - deploy-jenkins
 jobs:
   deploy:
-    name: Deploy app
+    name: Deploy app.
     runs-on: ubuntu-latest
     concurrency: deploy-group    # optional: ensure only one action runs at a time
     steps:
